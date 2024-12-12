@@ -1,3 +1,5 @@
+This fork originally existed to add ed25519 auth support at the expense of a cgo dependency. The upstream library now has a native go ed25519 implimentation, so there is no longer any need for this.
+
 # Go-MySQL-Driver
 
 A MySQL-Driver for Go's [database/sql](https://golang.org/pkg/database/sql/) package
@@ -28,7 +30,7 @@ A MySQL-Driver for Go's [database/sql](https://golang.org/pkg/database/sql/) pac
 
 ## Features
   * Lightweight and [fast](https://github.com/go-sql-driver/sql-benchmark "golang MySQL-Driver performance")
-  * Native Go implementation. No C-bindings, just pure Go
+  * ~~Native Go implementation. No C-bindings, just pure Go~~ not true for this fork
   * Connections over TCP/IPv4, TCP/IPv6, Unix domain sockets or [custom protocols](https://godoc.org/github.com/go-sql-driver/mysql#DialFunc)
   * Automatic handling of broken connections
   * Automatic Connection Pooling *(by database/sql package)*
